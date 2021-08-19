@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="typora-vue-theme主题介绍, 唯愿饶安">
+    <meta name="keywords" content="判断字符串包含方法, 唯愿饶安">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>typora-vue-theme主题介绍 | 唯愿饶安</title>
+    <title>判断字符串包含方法 | 唯愿饶安</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -312,12 +312,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">typora-vue-theme主题介绍</h1>
+                    <h1 class="description center-align post-title">判断字符串包含方法</h1>
                 </div>
             </div>
         </div>
@@ -433,8 +433,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%B0%8F%E8%AE%B0/">
-                                <span class="chip bg-color">小记</span>
+                            <a href="/tags/js/">
+                                <span class="chip bg-color">js</span>
                             </a>
                         
                     </div>
@@ -476,31 +476,28 @@
                 <h1 id="判断字符串包含方法"><a href="#判断字符串包含方法" class="headerlink" title="判断字符串包含方法"></a>判断字符串包含方法</h1><ul>
 <li><p>indexOf（searchStr，formIndex）</p>
 <p>对大小写敏感，若不存在则返回-1；</p>
-<pre class="line-numbers language-none"><code class="language-none">const srt = 'asd';
-console.log(str.indexOf('a') !== -1) //true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">const</span> srt <span class="token operator">=</span> <span class="token string">'asd'</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">)</span> <span class="token operator">!==</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">//true</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
 <li><p>match（regexp）</p>
 <p>在字符串内检索指定的值，或找到一个或多个正则表达式的匹配。</p>
-<pre class="line-numbers language-none"><code class="language-none"> var str = "123"
+<pre class="line-numbers language-none"><code class="language-none">var str = "123"
 var reg = RegExp(/3/);
-if(str.match(reg)){
+	if(str.match(reg)){
  //包含；
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 <li><p>serach(regexp)</p>
 <p>search() 方法不执行全局匹配，它将忽略标志 g。它同时忽略 regexp 的 lastIndex 属性，并且总是从字符串的开始进行检索，这意味着它总是返回 stringObject 的第一个匹配的位置。</p>
+<p>类似于indexOf（）</p>
 </li>
-</ul>
-<pre><code>类似于indexOf（）
-</code></pre>
-<ul>
 <li><p><strong>test()</strong></p>
 <p>用于检索字符串中指定的值。返回 true 或 false。</p>
 </li>
 <li><p><strong>exec()</strong></p>
 <p>用于检索字符串中的正则表达式的匹配。返回一个数组，其中存放匹配的结果。如果未找到匹配，则返回值为 null。</p>
-<pre class="line-numbers language-none"><code class="language-none"> var str = "123"
+<pre class="line-numbers language-none"><code class="language-none">var str = "123"
 var reg = RegExp(/3/);
-if(reg.exec(str)){
- //包含；
+	if(reg.exec(str)){
+  //包含；
 }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 </ul>
 
@@ -567,8 +564,8 @@ if(reg.exec(str)){
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%B0%8F%E8%AE%B0/">
-                                    <span class="chip bg-color">小记</span>
+                                <a href="/tags/js/">
+                                    <span class="chip bg-color">js</span>
                                 </a>
                             
                         </div>
@@ -790,7 +787,7 @@ gitment.render('gitment-content');
     disqus_config = function () {
         this.page.url = 'http://weiyuanranan.github.io/2021/08/19/pan-duan-zi-fu-chuan-bao-han-fang-fa/';
         this.page.identifier = '/2021/08/19/pan-duan-zi-fu-chuan-bao-han-fang-fa/';
-        this.page.title = 'typora-vue-theme主题介绍';
+        this.page.title = '判断字符串包含方法';
     };
     let disqus_shortname = '';
 
@@ -851,15 +848,15 @@ gitment.render('gitment-content');
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="typora-vue-theme主题介绍">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="判断字符串包含方法">
                         
-                        <span class="card-title">typora-vue-theme主题介绍</span>
+                        <span class="card-title">判断字符串包含方法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            js方法小计
                         
                     </div>
                     <div class="publish-info">
@@ -878,8 +875,8 @@ gitment.render('gitment-content');
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%B0%8F%E8%AE%B0/">
-                        <span class="chip bg-color">小记</span>
+                    <a href="/tags/js/">
+                        <span class="chip bg-color">js</span>
                     </a>
                     
                 </div>
