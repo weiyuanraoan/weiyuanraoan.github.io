@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="判断字符串包含方法, 唯愿饶安">
+    <meta name="keywords" content="唯愿饶安">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>判断字符串包含方法 | 唯愿饶安</title>
+    <title>唯愿饶安</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -312,12 +312,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">判断字符串包含方法</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -431,13 +431,9 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/js/">
-                                <span class="chip bg-color">js</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -449,7 +445,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-08-19
+                    2021-08-25
                 </div>
                 
 
@@ -473,33 +469,155 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="判断字符串包含方法"><a href="#判断字符串包含方法" class="headerlink" title="判断字符串包含方法"></a>判断字符串包含方法</h1><ul>
-<li><p>indexOf（searchStr，formIndex）</p>
-<p>对大小写敏感，若不存在则返回-1；</p>
-<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">const</span> srt <span class="token operator">=</span> <span class="token string">'asd'</span><span class="token punctuation">;</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">)</span> <span class="token operator">!==</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">//true</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
-<li><p>match（regexp）</p>
-<p>在字符串内检索指定的值，或找到一个或多个正则表达式的匹配。</p>
-<pre class="line-numbers language-none"><code class="language-none">var str = "123"
-var reg = RegExp(/3/);
-	if(str.match(reg)){
- //包含；
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li><p>serach(regexp)</p>
-<p>search() 方法不执行全局匹配，它将忽略标志 g。它同时忽略 regexp 的 lastIndex 属性，并且总是从字符串的开始进行检索，这意味着它总是返回 stringObject 的第一个匹配的位置。</p>
-<p>类似于indexOf（）</p>
-</li>
-<li><p><strong>test()</strong></p>
-<p>用于检索字符串中指定的值。返回 true 或 false。</p>
-</li>
-<li><p><strong>exec()</strong></p>
-<p>用于检索字符串中的正则表达式的匹配。返回一个数组，其中存放匹配的结果。如果未找到匹配，则返回值为 null。</p>
-<pre class="line-numbers language-none"><code class="language-none">var str = "123"
-var reg = RegExp(/3/);
-	if(reg.exec(str)){
-  //包含；
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+                <p>title: Echarts配置项<br>date: 2021-08-25 15:45:00<br>summary: Echarts部分配置<br>tags:</p>
+<ul>
+<li>Echarts</li>
 </ul>
+<h1 id="Echarts-配置项"><a href="#Echarts-配置项" class="headerlink" title="Echarts 配置项"></a>Echarts 配置项</h1><h2 id="X轴文字显示"><a href="#X轴文字显示" class="headerlink" title="X轴文字显示"></a>X轴文字显示</h2><ul>
+<li><p>竖着显示</p>
+<pre class="line-numbers language-csharp" data-language="csharp"><code class="language-csharp">xAxis ： <span class="token punctuation">{</span>
+             axisLabel<span class="token punctuation">:</span><span class="token punctuation">{</span>
+                  interval<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                  <span class="token named-parameter punctuation">formatter</span><span class="token punctuation">:</span> function <span class="token punctuation">(</span><span class="token keyword">value</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token comment">//x轴的文字改为竖版显示</span>
+                    <span class="token class-name"><span class="token keyword">var</span></span> str <span class="token operator">=</span> <span class="token keyword">value</span><span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token keyword">return</span> str<span class="token punctuation">.</span><span class="token keyword">join</span><span class="token punctuation">(</span><span class="token string">"\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                  <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>倾斜45度数</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">xAixs <span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">// x轴文字倾斜</span>
+                   <span class="token comment">// x轴文字倾斜</span>
+                axisLabel<span class="token operator">:</span><span class="token punctuation">{</span>
+                  interval<span class="token operator">:</span><span class="token number">0</span><span class="token punctuation">,</span>
+                  rotate<span class="token operator">:</span><span class="token number">45</span><span class="token punctuation">,</span><span class="token comment">//倾斜度 -90 至 90 默认为0</span>
+                  margin<span class="token operator">:</span><span class="token number">2</span><span class="token punctuation">,</span>
+                  textStyle<span class="token operator">:</span><span class="token punctuation">{</span>
+                    fontWeight<span class="token operator">:</span><span class="token string">"bolder"</span><span class="token punctuation">,</span>
+                    color<span class="token operator">:</span><span class="token string">"#000000"</span>
+                  <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ul>
+<ul>
+<li><p>X 轴数据太多折叠显示</p>
+<pre class="line-numbers language-none"><code class="language-none">axisLabel: {
+interval: 0,
+formatter(value) {
+if (value.length &gt; 5) {
+value = `${value.substring(0, 5)}..`;
+}
+return value;
+}
+},<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>饼图legend太多显示 </p>
+<pre class="line-numbers language-none"><code class="language-none">// formatter(name) {
+//     return (name.length &gt; 5 ? (`${name.slice(0, 5)}...`) : name); 
+// }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
+</ul>
+<h2 id="动态给的Echarts高度"><a href="#动态给的Echarts高度" class="headerlink" title="动态给的Echarts高度"></a>动态给的Echarts高度</h2><pre class="line-numbers language-none"><code class="language-none">autodivheight() { // 函数：获取尺寸
+
+​            // 获取浏览器窗口高度
+
+​            let winHeight = 0;
+
+​            if (window.innerHeight) {
+
+​                winHeight = window.innerHeight;
+
+​            } else if ((document.body) &amp;&amp; (document.body.clientHeight)) {
+
+​                winHeight = document.body.clientHeight;
+
+​            }
+
+​            // 通过深入Document内部对body进行检测，获取浏览器窗口高度
+
+​            if (document.documentElement &amp;&amp; document.documentElement.clientHeight) {
+
+​                winHeight = document.documentElement.clientHeight;
+
+​            }
+
+​            // DIV高度为浏览器窗口的高度
+
+​            // document.getElementById("test").style.height= winHeight +"px";
+
+​            // DIV高度为浏览器窗口高度的一半
+
+​            document.getElementById('chart').style.height = `${winHeight * 0.6}px`;
+
+​        }
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="初始化图表"><a href="#初始化图表" class="headerlink" title="初始化图表"></a>初始化图表</h2><pre class="line-numbers language-none"><code class="language-none">myChart.clear();
+myChart.setOption(this.option); 
+window.onresize = () =&gt; {
+this.autodivheight(); 
+//  根据窗口大小调整曲线大小
+myChart.resize();
+};<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="x轴name的位置"><a href="#x轴name的位置" class="headerlink" title="x轴name的位置"></a>x轴name的位置</h2><pre class="line-numbers language-none"><code class="language-none">xAxis: {
+              name: '报表日',
+              type: 'category',
+              axisLabel: {
+                  interval: 0
+              }, // x轴显示完整
+              nameTextStyle: {
+                  padding: [0, 0, 0, 20] // 四个数字分别为上右下左与原位置距离
+              },
+              data: []
+          },<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="Y轴的网格线的配置"><a href="#Y轴的网格线的配置" class="headerlink" title="Y轴的网格线的配置"></a>Y轴的网格线的配置</h2><pre class="line-numbers language-js" data-language="js"><code class="language-js">yAxis<span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+                type<span class="token operator">:</span> <span class="token string">'value'</span><span class="token punctuation">,</span>
+                name<span class="token operator">:</span> <span class="token string">'企业数'</span> 
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                type<span class="token operator">:</span> <span class="token string">'value'</span><span class="token punctuation">,</span>
+                name<span class="token operator">:</span> <span class="token string">'提交率（%）'</span><span class="token punctuation">,</span>
+                min<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                max<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+                interval<span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+                offset<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+                axisLabel<span class="token operator">:</span> <span class="token punctuation">{</span>
+                    formatter<span class="token operator">:</span> <span class="token string">'{value} %'</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                splitLine<span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token comment">// 网格线</span>
+                    show<span class="token operator">:</span> <span class="token boolean">false</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="工具栏的配置"><a href="#工具栏的配置" class="headerlink" title="工具栏的配置"></a>工具栏的配置</h2><pre class="line-numbers language-none"><code class="language-none">toolbox: {
+             right: '-5px',
+             top: '-10px',
+             backgroundColor: 'rgba(0,0,0,0)', // 工具箱背景颜色
+             borderColor: '#ccc', // 工具箱边框颜色
+             borderWidth: 0, // 工具箱边框线宽，单位px，默认为0（无边框）
+             padding: 15, // 工具箱内边距，单位px，默认各方向内边距为5，
+             // 接受数组分别设定上右下左边距，同css
+             itemGap: 10, // 各个item之间的间隔，单位px，默认为10，
+             // 横向布局时为水平间隔，纵向布局时为纵向间隔
+             itemSize: 16,  
+             feature: {
+                 magicType: { 
+                     show: true,
+                     barWidth: 30,
+                     type: ['bar', 'line'],
+                     title: {
+                         line: '折线图',
+                         bar: '柱状图'
+                     }
+                 },
+                 restore: { show: true }
+             }
+         },<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 
                 
             </div>
@@ -513,11 +631,7 @@ var reg = RegExp(/3/);
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/js/">
-                                    <span class="chip bg-color">js</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -691,7 +805,7 @@ var reg = RegExp(/3/);
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/08/25/js-de-shu-ju-lei-xing-gai-shu/">
+                <a href="/2021/08/25/js-yun-suan-fu-you-xian-ji/">
                     <div class="card-image">
                         
                         
@@ -728,13 +842,13 @@ var reg = RegExp(/3/);
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/08/18/hello-world/">
+                <a href="/2021/08/25/css-xuan-ze-qi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -745,7 +859,7 @@ var reg = RegExp(/3/);
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-18
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-25
                             </span>
                         <span class="publish-author">
                             

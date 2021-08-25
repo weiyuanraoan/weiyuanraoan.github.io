@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="判断字符串包含方法, 唯愿饶安">
+    <meta name="keywords" content="唯愿饶安">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>判断字符串包含方法 | 唯愿饶安</title>
+    <title>唯愿饶安</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -312,12 +312,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">判断字符串包含方法</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -431,13 +431,9 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/js/">
-                                <span class="chip bg-color">js</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -449,7 +445,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-08-19
+                    2021-08-25
                 </div>
                 
 
@@ -473,32 +469,108 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="判断字符串包含方法"><a href="#判断字符串包含方法" class="headerlink" title="判断字符串包含方法"></a>判断字符串包含方法</h1><ul>
-<li><p>indexOf（searchStr，formIndex）</p>
-<p>对大小写敏感，若不存在则返回-1；</p>
-<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">const</span> srt <span class="token operator">=</span> <span class="token string">'asd'</span><span class="token punctuation">;</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>str<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">)</span> <span class="token operator">!==</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">//true</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
-<li><p>match（regexp）</p>
-<p>在字符串内检索指定的值，或找到一个或多个正则表达式的匹配。</p>
-<pre class="line-numbers language-none"><code class="language-none">var str = "123"
-var reg = RegExp(/3/);
-	if(str.match(reg)){
- //包含；
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li><p>serach(regexp)</p>
-<p>search() 方法不执行全局匹配，它将忽略标志 g。它同时忽略 regexp 的 lastIndex 属性，并且总是从字符串的开始进行检索，这意味着它总是返回 stringObject 的第一个匹配的位置。</p>
-<p>类似于indexOf（）</p>
+                <p>title: Js运算符优先级<br>date: 2021-08-25 15:45:00<br>summary: 平时容易忽略的点，正好总结一下。<br>tags:</p>
+<ul>
+<li>Js</li>
+</ul>
+<h1 id="JS运算符优先级"><a href="#JS运算符优先级" class="headerlink" title="JS运算符优先级"></a>JS运算符优先级</h1><h2 id="js运算符"><a href="#js运算符" class="headerlink" title="js运算符"></a>js运算符</h2><h3 id="算数运算符"><a href="#算数运算符" class="headerlink" title="算数运算符"></a>算数运算符</h3><pre class="line-numbers language-none"><code class="language-none">+ - * /
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<ul>
+<li><p>运算顺序：先算乘除取余、再算加减，有小括号先算小括号。</p>
 </li>
-<li><p><strong>test()</strong></p>
-<p>用于检索字符串中指定的值。返回 true 或 false。</p>
+<li><p>NaN 参与的运算 :得到结果都为NaN；</p>
 </li>
-<li><p><strong>exec()</strong></p>
-<p>用于检索字符串中的正则表达式的匹配。返回一个数组，其中存放匹配的结果。如果未找到匹配，则返回值为 null。</p>
-<pre class="line-numbers language-none"><code class="language-none">var str = "123"
-var reg = RegExp(/3/);
-	if(reg.exec(str)){
-  //包含；
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>infinity 参与的运算 ：视情况而定。</p>
+</li>
+<li><p>“+” 参与视情况隐式转换。</p>
+<h3 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h3></li>
+<li><p>比较运算符</p>
+</li>
+<li><table>
+<thead>
+<tr>
+<th>字符</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>&gt;</code></td>
+<td>大于</td>
+</tr>
+<tr>
+<td><code>&lt;</code></td>
+<td>小于</td>
+</tr>
+<tr>
+<td><code>&gt;=</code></td>
+<td>大于等于</td>
+</tr>
+<tr>
+<td><code>&lt;=</code></td>
+<td>小于等于</td>
+</tr>
+<tr>
+<td><code>==</code></td>
+<td>相等 <code>只判断值大小是否相等</code>，<code>不判断数据类型</code></td>
+</tr>
+<tr>
+<td><code>!=</code></td>
+<td>不等 <code>与相等完全相反</code></td>
+</tr>
+<tr>
+<td><code>===</code></td>
+<td>全等 <code>不光判断值相等</code>，<code>还要判断数据类型相等</code></td>
+</tr>
+<tr>
+<td><code>!==</code></td>
+<td>不全等 <code>与全等于完全相反</code></td>
+</tr>
+</tbody></table>
+</li>
+<li><p>NaN参与：不等于和不全等于结果是 <code>true</code>，其他的都得到 <code>false</code></p>
+</li>
+<li><p>Infinity参与的运算，视情况而定</p>
+</li>
+<li><p>其他数据类型也会隐式转换为数字参与比较。</p>
+</li>
+</ul>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token string">"123"</span> → <span class="token number">123</span>  
+      <span class="token boolean">true</span> → <span class="token number">1</span>  
+      <span class="token boolean">false</span> → <span class="token number">0</span>  
+      <span class="token keyword">null</span> → <span class="token number">0</span>  
+      <span class="token keyword">undefined</span> → <span class="token number">NaN</span>  
+      <span class="token string">""</span> → <span class="token number">0</span>  
+      <span class="token string">"abc"</span> → <span class="token number">NaN</span>  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li><p>null 的判断比较特殊：null 与 0 判断时，相等判断为 false，&gt;= 和 &lt;= 判断为 true</p>
+</li>
+<li><p>字符串比较时，比较两个字符串的 Unicode 编码顺序。从前往后 0-9，A-Z，a-z，前面的小于后面的。不关心两个字符串的长度，从第一个字符开始比较，依次往后顺延比较，直到比较出大小，就不再往后比较。</p>
+<pre><code>    // 字符串之间比较
+    console.log(3 &lt; "7"); // true
+    console.log("3" &lt; "17"); // false
+    console.log("3" &lt; "37"); // true
+    console.log("3" &lt; "47"); // true
+    console.log("3" &lt; "3"); // false
+    console.log("3" &lt; "a"); // true
+    console.log("A" &lt; "a"); // true
+    console.log("A" &lt; "0a"); // false
+    console.log("Z" &lt; "a"); // true
+    console.log("9Z" &lt; "a"); // true
+    
+    // 比较顺序，从前往后比较，前面先得出结果再参与后面的比较
+    console.log(3 &gt; 2 &gt; 1);  // false  3 &gt; 2 为true,1为true，所以true&gt;true为false。
+</code></pre>
+</li>
+<li><p>转为<code>false</code>：NaN、0、“”空字符串、null、undefined</p>
+</li>
+<li><p>转为<code>true</code>：非0 非NaN数字、非空字符串</p>
+</li>
+<li><pre><code>(逻辑与 a &amp;&amp; b ) 如果a能被转换为false，那么返回a；否则，返回b。
+(逻辑或 a || b ) 如果a能被转换为true，那么返回a；否则，返回b。
+</code></pre>
+</li>
 </ul>
 
                 
@@ -513,11 +585,7 @@ var reg = RegExp(/3/);
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/js/">
-                                    <span class="chip bg-color">js</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -691,7 +759,7 @@ var reg = RegExp(/3/);
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/08/25/js-de-shu-ju-lei-xing-gai-shu/">
+                <a href="/2021/08/25/map-set/">
                     <div class="card-image">
                         
                         
@@ -728,13 +796,13 @@ var reg = RegExp(/3/);
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/08/18/hello-world/">
+                <a href="/2021/08/25/echarts-pei-zhi-xiang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -745,7 +813,7 @@ var reg = RegExp(/3/);
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-18
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-25
                             </span>
                         <span class="publish-author">
                             
