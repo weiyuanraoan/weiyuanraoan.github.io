@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>判断字符串包含方法</title>
+      <link href="/2021/08/31/wu-xiu-xiao-ji/"/>
+      <url>/2021/08/31/wu-xiu-xiao-ji/</url>
+      
+        <content type="html"><![CDATA[<p><strong>看过的越来越多，杂而不纯。</strong></p><p>前端也开始卷起来了，晚上逛B站推的也是各种前端课程，偶然间看到不会的知识点会有些许慌张，先换家公司看看，接触一些新技术，尝试一些新方向。</p><p> 加油！</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 小记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="/2021/08/25/map-set/"/>
       <url>/2021/08/25/map-set/</url>
@@ -60,7 +79,7 @@
       <link href="/2021/08/25/ast-chou-xiang-yu-fa-shu/"/>
       <url>/2021/08/25/ast-chou-xiang-yu-fa-shu/</url>
       
-        <content type="html"><![CDATA[<p>title: Babel原理<br>date: 2021-08-25 15:45:00<br>summary: Babel小记<br>tags:</p><ul><li>工程化</li></ul><h1 id="Babel原理"><a href="#Babel原理" class="headerlink" title="Babel原理"></a>Babel原理</h1><h3 id="Babel的工作流程"><a href="#Babel的工作流程" class="headerlink" title="Babel的工作流程"></a>Babel的工作流程</h3><ul><li><p>解析：解析成AST，由babylon引擎实现。</p><p>两个阶段：词法分析、语法分析。</p><ul><li><p>词法分析：字符串=&gt;令牌（token）类似于ast节点。</p></li><li><p>语法分析：令牌=&gt;AST，信息=&gt;ast的方式。</p></li></ul></li><li><p>转换：接受到AST后进行处理：通过babel-traverse进行遍历，进行节点的添加、更新、移除等操作。（Babel开始介入工作）</p></li><li><p>生成：讲转换完成的AST通过babel-generator转换成js代码，进行整体遍历，然后进行转换对应的字符串。</p></li></ul>]]></content>
+        <content type="html"><![CDATA[<h1 id="Babel原理"><a href="#Babel原理" class="headerlink" title="Babel原理"></a>Babel原理</h1><h3 id="Babel的工作流程"><a href="#Babel的工作流程" class="headerlink" title="Babel的工作流程"></a>Babel的工作流程</h3><ul><li><p>解析：解析成AST，由babylon引擎实现。</p><p>两个阶段：词法分析、语法分析。</p><ul><li><p>词法分析：字符串=&gt;令牌（token）类似于ast节点。</p></li><li><p>语法分析：令牌=&gt;AST，信息=&gt;ast的方式。</p></li></ul></li><li><p>转换：接受到AST后进行处理：通过babel-traverse进行遍历，进行节点的添加、更新、移除等操作。（Babel开始介入工作）</p></li><li><p>生成：讲转换完成的AST通过babel-generator转换成js代码，进行整体遍历，然后进行转换对应的字符串。</p></li></ul>]]></content>
       
       
       
