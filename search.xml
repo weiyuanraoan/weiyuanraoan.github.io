@@ -23,6 +23,25 @@
     
     
     <entry>
+      <title>css 选择器</title>
+      <link href="/2021/08/25/ast-chou-xiang-yu-fa-shu/"/>
+      <url>/2021/08/25/ast-chou-xiang-yu-fa-shu/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Babel原理"><a href="#Babel原理" class="headerlink" title="Babel原理"></a>Babel原理</h1><h3 id="Babel的工作流程"><a href="#Babel的工作流程" class="headerlink" title="Babel的工作流程"></a>Babel的工作流程</h3><ul><li><p>解析：解析成AST，由babylon引擎实现。</p><p>两个阶段：词法分析、语法分析。</p><ul><li><p>词法分析：字符串=&gt;令牌（token）类似于ast节点。</p></li><li><p>语法分析：令牌=&gt;AST，信息=&gt;ast的方式。</p></li></ul></li><li><p>转换：接受到AST后进行处理：通过babel-traverse进行遍历，进行节点的添加、更新、移除等操作。（Babel开始介入工作）</p></li><li><p>生成：讲转换完成的AST通过babel-generator转换成js代码，进行整体遍历，然后进行转换对应的字符串。</p></li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 工程化 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Echarts配置项</title>
       <link href="/2021/08/25/echarts-pei-zhi-xiang/"/>
       <url>/2021/08/25/echarts-pei-zhi-xiang/</url>
@@ -53,25 +72,6 @@
         <tags>
             
             <tag> Js </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>css 选择器</title>
-      <link href="/2021/08/25/ast-chou-xiang-yu-fa-shu/"/>
-      <url>/2021/08/25/ast-chou-xiang-yu-fa-shu/</url>
-      
-        <content type="html"><![CDATA[<h1 id="Babel原理"><a href="#Babel原理" class="headerlink" title="Babel原理"></a>Babel原理</h1><h3 id="Babel的工作流程"><a href="#Babel的工作流程" class="headerlink" title="Babel的工作流程"></a>Babel的工作流程</h3><ul><li><p>解析：解析成AST，由babylon引擎实现。</p><p>两个阶段：词法分析、语法分析。</p><ul><li><p>词法分析：字符串=&gt;令牌（token）类似于ast节点。</p></li><li><p>语法分析：令牌=&gt;AST，信息=&gt;ast的方式。</p></li></ul></li><li><p>转换：接受到AST后进行处理：通过babel-traverse进行遍历，进行节点的添加、更新、移除等操作。（Babel开始介入工作）</p></li><li><p>生成：讲转换完成的AST通过babel-generator转换成js代码，进行整体遍历，然后进行转换对应的字符串。</p></li></ul>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 工程化 </tag>
             
         </tags>
       
@@ -156,25 +156,6 @@
     
     
     <entry>
-      <title>判断小数点后几位</title>
-      <link href="/2021/08/25/pan-duan-xiao-shu-dian-hou-ji-wei/"/>
-      <url>/2021/08/25/pan-duan-xiao-shu-dian-hou-ji-wei/</url>
-      
-        <content type="html"><![CDATA[<h1 id="判断小数点后几位"><a href="#判断小数点后几位" class="headerlink" title="判断小数点后几位"></a>判断小数点后几位</h1><pre class="line-numbers language-js" data-language="js"><code class="language-js">number<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>length<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> Js </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>webpack</title>
       <link href="/2021/08/25/webpack-de-ji-chu-pei-zhi/"/>
       <url>/2021/08/25/webpack-de-ji-chu-pei-zhi/</url>
@@ -186,6 +167,25 @@
         <tags>
             
             <tag> 工程化 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>判断小数点后几位</title>
+      <link href="/2021/08/25/pan-duan-xiao-shu-dian-hou-ji-wei/"/>
+      <url>/2021/08/25/pan-duan-xiao-shu-dian-hou-ji-wei/</url>
+      
+        <content type="html"><![CDATA[<h1 id="判断小数点后几位"><a href="#判断小数点后几位" class="headerlink" title="判断小数点后几位"></a>判断小数点后几位</h1><pre class="line-numbers language-js" data-language="js"><code class="language-js">number<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>length<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Js </tag>
             
         </tags>
       
@@ -290,8 +290,8 @@
     
     <entry>
       <title>Hello World</title>
-      <link href="/2021/08/18/hello-world/"/>
-      <url>/2021/08/18/hello-world/</url>
+      <link href="/2021/08/07/hello-world/"/>
+      <url>/2021/08/07/hello-world/</url>
       
         <content type="html"><![CDATA[<h1 id="善于总结-方得长久"><a href="#善于总结-方得长久" class="headerlink" title="善于总结 方得长久"></a>善于总结 方得长久</h1>]]></content>
       
